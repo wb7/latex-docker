@@ -1,4 +1,7 @@
-FROM wombat7/latex:ctanbasic
+FROM wombat7/latex:basic
 MAINTAINER Lucas <lg@wb7.eu>
 
 RUN tlmgr install scheme-full
+RUN wget -q https://www.tug.org/fonts/getnonfreefonts/install-getnonfreefonts \
+    && texlua ./install-getnonfreefonts \
+    && getnonfreefonts -a --sys
