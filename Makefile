@@ -1,4 +1,4 @@
-NS = blang
+NS = wombat7
 REPO = latex
 IMAGE = $(NS)/$(REPO)
 

@@ -1,4 +1,4 @@
-FROM blang/latex:ctanbasic
-MAINTAINER Benedikt Lang <mail@blang.io>
+FROM wombat7/latex:ctanbasic
+MAINTAINER Lucas <lg@wb7.eu>
 
 RUN tlmgr install scheme-full
